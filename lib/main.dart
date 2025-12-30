@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      restorationScopeId: 'app',
       routerConfig: goRouter,
       title: 'Product Store',
       theme: ThemeData(

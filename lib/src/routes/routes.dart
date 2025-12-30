@@ -1,4 +1,5 @@
 // lib/src/routing/app_router.dart
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_feature_first_template/src/features/products/presentation/pages/products.dart';
 import 'package:flutter_feature_first_template/src/features/products/presentation/pages/products_detail.dart';
@@ -6,6 +7,7 @@ import '../features/posts/presentation/pages/posts.dart';
 
 final goRouter = GoRouter(
   initialLocation: '/',
+  restorationScopeId: 'router',
   routes: [
     GoRoute(
       path: '/',
@@ -13,7 +15,10 @@ final goRouter = GoRouter(
       routes: [
         GoRoute(
           path: 'products',
-          builder: (context, state) => const ProductListScreen(),
+          pageBuilder: (context, state) => const MaterialPage(
+            restorationId: 'router.products',
+            child: ProductListScreen(),
+          ),
           routes: [
             GoRoute(
               path: ':id',
