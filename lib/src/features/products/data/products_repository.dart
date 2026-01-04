@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../../shared/network/api_client.dart';
+import '../../../shared/services/api_client.dart';
 import '../domain/product.dart';
 
 part 'products_repository.g.dart';
