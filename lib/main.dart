@@ -1,8 +1,8 @@
 // lib/main.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_feature_first_template/src/routes/routes.dart';
-import 'package:flutter_feature_first_template/src/shared/utils/url/url_wrapper.dart';
+import '../src/routes/routes.dart';
+import '../src/shared/utils/url/url_wrapper.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 void main() {

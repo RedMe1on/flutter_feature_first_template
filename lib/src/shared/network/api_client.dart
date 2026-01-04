@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_feature_first_template/src/shared/network/api_constants.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
+import './api_constants.dart';
 
 part 'api_client.g.dart';
 

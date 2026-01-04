@@ -2,9 +2,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter_feature_first_template/src/features/products/data/products_repository.dart';
-import 'package:flutter_feature_first_template/src/features/products/domain/product.dart';
-import 'package:flutter_feature_first_template/src/shared/utils/device.dart';
+import '../../../../features/products/data/products_repository.dart';
+import '../../../../features/products/domain/product.dart';
+import '../../../../shared/utils/device.dart';
 import 'package:shimmer/shimmer.dart';
 
 final productDetailProvider = FutureProvider.family<Product, int>((

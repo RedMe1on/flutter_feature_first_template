@@ -1,8 +1,9 @@
 // lib/src/features/posts/data/posts_repository.dart
 import 'package:dio/dio.dart';
-import 'package:flutter_feature_first_template/src/shared/network/api_client.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+
+import '../../../shared/network/api_client.dart';
 import '../domain/product.dart';
 
 part 'products_repository.g.dart';
